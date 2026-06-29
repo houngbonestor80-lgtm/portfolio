@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact - Tourisme Bénin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span style="color: #25d366;">Tou</span><span style="color: #ffc107;">risme</span>
+                <span style="color: #e74c3c;">Bénin</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="parcs.html">Parcs & Nature</a></li>
+                    <li class="nav-item"><a class="nav-link" href="culture.html">Culture</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galerie.html">Galerie</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-reserve" href="https://wa.me/22956336282?text=Bonjour, je souhaite réserver un circuit au Bénin" target="_blank">
+                            <i class="fab fa-whatsapp me-1"></i> Réserver
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-section" style="background-image: url('hospit.jpg'); min-height: 400px; height: 50vh;">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Contactez-nous</h1>
+            <p>Préparez votre voyage au Bénin dès maintenant</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="py-5">
+        <div class="container py-3">
+            <div class="row g-5">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <h2 class="section-title text-start" style="text-align: left !important;">Parlons de votre voyage</h2>
+                    <p style="color: #555; margin-bottom: 30px;">
+                        Que vous souhaitiez un circuit personnalisé, une réservation de groupe ou simplement
+                        des informations, n'hésitez pas à nous écrire.
+                    </p>
+                    <div style="display: flex; flex-direction: column; gap: 20px;">
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(17,69,47,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-phone" style="color: var(--green-main); font-size: 1.1rem;"></i>
+                            </div>
+                            <div>
+                                <small style="color: #999;">Téléphone</small>
+                                <p style="margin: 0; font-weight: 600;">+229 56 33 62 82</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(17,69,47,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-envelope" style="color: var(--green-main); font-size: 1.1rem;"></i>
+                            </div>
+                            <div>
+                                <small style="color: #999;">Email</small>
+                                <p style="margin: 0; font-weight: 600;">contact@tourismebenin.com</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(17,69,47,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-map-marker-alt" style="color: var(--green-main); font-size: 1.1rem;"></i>
+                            </div>
+                            <div>
+                                <small style="color: #999;">Adresse</small>
+                                <p style="margin: 0; font-weight: 600;">Cotonou, Bénin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Nom complet</label>
+                                <input type="text" name="nom" class="form-control" placeholder="Votre nom" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" placeholder="Votre email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Téléphone</label>
+                                <input type="text" name="telephone" class="form-control" placeholder="Votre numéro">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Sujet</label>
+                                <input type="text" name="sujet" class="form-control" placeholder="Objet du message">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Message</label>
+                                <textarea name="message" rows="5" class="form-control" placeholder="Votre message..." required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-submit btn-lg px-5 mt-2">
+                                    <i class="fas fa-paper-plane me-2"></i>Envoyer le message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5><span style="color: #25d366;">Tou</span><span style="color: #ffc107;">risme</span> <span style="color: #e74c3c;">Bénin</span></h5>
+                    <p>Découvrez la richesse culturelle et naturelle du Bénin avec nos circuits professionnels.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Liens rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="parcs.html">Parcs & Nature</a></li>
+                        <li><a href="culture.html">Culture & Patrimoine</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact</h5>
+                    <p><i class="fas fa-phone me-2"></i>+229 56 33 62 82</p>
+                    <p><i class="fas fa-envelope me-2"></i>contact@tourismebenin.com</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>Cotonou, Bénin</p>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy; 2026 Tourisme Bénin. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/22956336282?text=Bonjour, je souhaite réserver un circuit au Bénin" target="_blank" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+    <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0})"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 80 });
+
+        window.addEventListener('scroll', function () {
+            document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+            document.getElementById('backToTop').classList.toggle('visible', window.scrollY > 400);
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var nom = this.querySelector('[name="nom"]').value;
+            var email = this.querySelector('[name="email"]').value;
+            var sujet = this.querySelector('[name="sujet"]').value;
+            var message = this.querySelector('[name="message"]').value;
+            var mailto = 'mailto:contact@tourismebenin.com'
+                + '?subject=' + encodeURIComponent(sujet)
+                + '&body=' + encodeURIComponent('Nom: ' + nom + '\nEmail: ' + email + '\n\n' + message);
+            window.location.href = mailto;
+        });
+    </script>
+</body>
+</html>

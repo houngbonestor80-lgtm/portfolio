@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Galerie - Tourisme Bénin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span style="color: #25d366;">Tou</span><span style="color: #ffc107;">risme</span>
+                <span style="color: #e74c3c;">Bénin</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="parcs.html">Parcs & Nature</a></li>
+                    <li class="nav-item"><a class="nav-link" href="culture.html">Culture</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="galerie.html">Galerie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-reserve" href="https://wa.me/22956336282?text=Bonjour, je souhaite réserver un circuit au Bénin" target="_blank">
+                            <i class="fab fa-whatsapp me-1"></i> Réserver
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-section" style="background-image: url('culture.jpg');">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Galerie Photos</h1>
+            <p>Plongez dans la beauté du Bénin à travers nos plus belles images</p>
+        </div>
+    </section>
+
+    <!-- Galerie -->
+    <section class="py-5">
+        <div class="container py-3">
+            <h2 class="section-title" data-aos="fade-up">Nos Plus Belles Photos</h2>
+            <p class="section-subtitle" data-aos="fade-up">Découvrez le Bénin en images</p>
+
+            <div class="gallery-grid" data-aos="fade-up">
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('tony17.jpeg')">
+                    <img src="tony17.jpeg" alt="Bénin photo 1">
+                </div>
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('tony1.jpeg')">
+                    <img src="tony1.jpeg" alt="Bénin photo 2">
+                </div>
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('tony2.jpeg')">
+                    <img src="tony2.jpeg" alt="Bénin photo 3">
+                </div>
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('tony3.jpeg')">
+                    <img src="tony3.jpeg" alt="Bénin photo 4">
+                </div>
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('tony4.jpeg')">
+                    <img src="tony4.jpeg" alt="Bénin photo 5">
+                </div>
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('tony5.jpeg')">
+                    <img src="tony5.jpeg" alt="Bénin photo 6">
+                </div>
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('tony6.jpeg')">
+                    <img src="tony6.jpeg" alt="Bénin photo 7">
+                </div>
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('tony7.jpeg')">
+                    <img src="tony7.jpeg" alt="Bénin photo 8">
+                </div>
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('tony8.jpeg')">
+                    <img src="tony8.jpeg" alt="Bénin photo 9">
+                </div>
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('tony9.jpeg')">
+                    <img src="tony9.jpeg" alt="Bénin photo 10">
+                </div>
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('tony10.jpeg')">
+                    <img src="tony10.jpeg" alt="Bénin photo 11">
+                </div>
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('tony11.jpeg')">
+                    <img src="tony11.jpeg" alt="Bénin photo 12">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="modal fade" id="lightboxModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" style="z-index: 10;"></button>
+                <img id="lightboxImage" class="img-fluid rounded" alt="Photo agrandie">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5><span style="color: #25d366;">Tou</span><span style="color: #ffc107;">risme</span> <span style="color: #e74c3c;">Bénin</span></h5>
+                    <p>Découvrez la richesse culturelle et naturelle du Bénin avec nos circuits professionnels.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Liens rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="parcs.html">Parcs & Nature</a></li>
+                        <li><a href="culture.html">Culture & Patrimoine</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact</h5>
+                    <p><i class="fas fa-phone me-2"></i>+229 56 33 62 82</p>
+                    <p><i class="fas fa-envelope me-2"></i>contact@tourismebenin.com</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>Cotonou, Bénin</p>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy; 2026 Tourisme Bénin. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/22956336282?text=Bonjour, je souhaite réserver un circuit au Bénin" target="_blank" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+    <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0})"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 80 });
+
+        window.addEventListener('scroll', function () {
+            document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+            document.getElementById('backToTop').classList.toggle('visible', window.scrollY > 400);
+        });
+
+        function showImage(src) {
+            document.getElementById('lightboxImage').src = src;
+        }
+    </script>
+</body>
+</html>
