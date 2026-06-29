@@ -820,142 +820,23 @@ img {
 }
 
 /* =============================================
-   PROJECT PREVIEWS
+   PROJECT IFRAME PREVIEWS
    ============================================= */
-.project-preview {
+.project-iframe-wrapper {
     width: 100%;
     height: 220px;
-    border-radius: 4px;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    background: var(--bg-secondary);
 }
 
-.preview-browser-bar {
-    background: #2a2a3a;
-    padding: 8px 12px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    flex-shrink: 0;
-}
-
-.preview-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-}
-
-.preview-dot.red { background: #ff5f57; }
-.preview-dot.yellow { background: #febc2e; }
-.preview-dot.green { background: #28c840; }
-
-.preview-url {
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
-    color: var(--text-muted);
-    background: rgba(255,255,255,0.06);
-    padding: 2px 10px;
-    border-radius: 4px;
-    margin-left: 8px;
-}
-
-.preview-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-}
-
-/* Akili Preview */
-.preview-akili {
-    background: #16171d;
-}
-
-.preview-akili-logo {
-    font-size: 2.5rem;
-    color: #61dafb;
-    margin-bottom: 8px;
-    animation: spin-slow 8s linear infinite;
-}
-
-@keyframes spin-slow {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
-.preview-akili-title {
-    font-family: var(--font);
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #f3f4f6;
-    margin-bottom: 4px;
-}
-
-.preview-akili-subtitle {
-    font-size: 0.75rem;
-    color: #9ca3af;
-    margin-bottom: 12px;
-}
-
-.preview-akili-btn {
-    background: rgba(170, 59, 255, 0.15);
-    color: #c084fc;
-    border: 1px solid rgba(170, 59, 255, 0.4);
-    padding: 4px 16px;
-    border-radius: 5px;
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-}
-
-/* Tourisme Preview */
-.preview-tourisme-content {
-    padding: 0;
-}
-
-.preview-tourisme-hero {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(13,59,30,0.85), rgba(17,69,47,0.9)),
-                linear-gradient(45deg, #1a3a2a, #2d5a27);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    padding: 16px;
-}
-
-.preview-tourisme-nav {
-    font-size: 0.7rem;
-    font-weight: 700;
-    position: absolute;
-    top: 38px;
-    left: 12px;
-}
-
-.preview-tourisme-title {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: white;
-    font-family: 'Inter', sans-serif;
-}
-
-.preview-tourisme-sub {
-    font-size: 0.7rem;
-    color: rgba(255,255,255,0.7);
-}
-
-.preview-tourisme-btn {
-    background: #ffc107;
-    color: #1a1a1a;
-    padding: 4px 18px;
-    border-radius: 20px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    margin-top: 6px;
+.project-iframe-wrapper iframe {
+    width: 1280px;
+    height: 900px;
+    border: none;
+    transform: scale(0.27);
+    transform-origin: top left;
+    pointer-events: none;
 }
 
 /* =============================================
