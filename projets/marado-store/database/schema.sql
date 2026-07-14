@@ -1,14 +1,7 @@
--- ============================================================
--- Marado Store - Schema de base de donnees
--- Boutique en ligne de vente de telephones (iPhone, Samsung, Google)
--- ============================================================
 
 CREATE DATABASE IF NOT EXISTS marado_store CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE marado_store;
 
--- ------------------------------------------------------------
--- Marques
--- ------------------------------------------------------------
 CREATE TABLE brands (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
@@ -17,9 +10,6 @@ CREATE TABLE brands (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 
--- ------------------------------------------------------------
--- Produits
--- ------------------------------------------------------------
 CREATE TABLE products (
     id INT AUTO_INCREMENT PRIMARY KEY,
     brand_id INT NOT NULL,
@@ -40,9 +30,6 @@ CREATE TABLE products (
     FOREIGN KEY (brand_id) REFERENCES brands(id) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
--- ------------------------------------------------------------
--- Galerie d'images secondaires par produit
--- ------------------------------------------------------------
 CREATE TABLE product_images (
     id INT AUTO_INCREMENT PRIMARY KEY,
     product_id INT NOT NULL,
@@ -51,9 +38,6 @@ CREATE TABLE product_images (
     FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
--- ------------------------------------------------------------
--- Administrateurs
--- ------------------------------------------------------------
 CREATE TABLE admin_users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL UNIQUE,
@@ -62,9 +46,6 @@ CREATE TABLE admin_users (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 
--- ------------------------------------------------------------
--- Commandes
--- ------------------------------------------------------------
 CREATE TABLE orders (
     id INT AUTO_INCREMENT PRIMARY KEY,
     order_ref VARCHAR(20) NOT NULL UNIQUE,
@@ -81,9 +62,6 @@ CREATE TABLE orders (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 
--- ------------------------------------------------------------
--- Lignes de commande
--- ------------------------------------------------------------
 CREATE TABLE order_items (
     id INT AUTO_INCREMENT PRIMARY KEY,
     order_id INT NOT NULL,
@@ -95,9 +73,6 @@ CREATE TABLE order_items (
     FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE SET NULL
 ) ENGINE=InnoDB;
 
--- ------------------------------------------------------------
--- Messages de contact
--- ------------------------------------------------------------
 CREATE TABLE contact_messages (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
@@ -108,21 +83,14 @@ CREATE TABLE contact_messages (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 
--- ============================================================
--- Donnees de demarrage (seed)
--- ============================================================
-
 INSERT INTO brands (name, slug, color) VALUES
 ('Apple', 'apple', '#1d1d1f'),
 ('Samsung', 'samsung', '#1428a0'),
 ('Google', 'google', '#4285f4');
 
--- Mot de passe par defaut de l'admin : admin123
--- (hash genere avec password_hash('admin123', PASSWORD_DEFAULT))
 INSERT INTO admin_users (username, password_hash, full_name) VALUES
 ('admin', '$2y$10$yAyepJtiiwCG57JQN5Z7eOxYjUkdrP2Ld7AEk0uVTeY4YJCJdoTX6', 'Administrateur Marado Store');
 
--- Produits Apple
 INSERT INTO products (brand_id, name, slug, short_description, description, price, old_price, storage, color, stock, image_main, is_featured) VALUES
 (1, 'iPhone 15 Pro Max', 'iphone-15-pro-max', 'Le fleuron Apple avec puce A17 Pro et appareil photo 48 MP', 'L''iPhone 15 Pro Max repousse les limites avec son chassis en titane, sa puce A17 Pro ultra-rapide et son systeme photo professionnel 48 MP. Ecran Super Retina XDR 6,7 pouces avec Dynamic Island.', 850000, 899000, '256 Go', 'Titane Naturel', 12, 'assets/images/products/iphone-15-pro-max-main.jpg', 1),
 (1, 'iPhone 15', 'iphone-15', 'Design en aluminium colore avec Dynamic Island', 'L''iPhone 15 introduit Dynamic Island, une camera principale 48 MP et le port USB-C. Performances fluides grace a la puce A16 Bionic.', 650000, NULL, '128 Go', 'Bleu', 18, 'assets/images/products/iphone-15-main.jpg', 1),
@@ -130,20 +98,17 @@ INSERT INTO products (brand_id, name, slug, short_description, description, pric
 (1, 'iPhone 13', 'iphone-13', 'Le grand classique toujours au top', 'L''iPhone 13 reste un excellent choix avec sa puce A15 Bionic et son ecran Super Retina XDR eclatant.', 450000, NULL, '128 Go', 'Rose', 25, 'assets/images/products/iphone-13-main.jpg', 0),
 (1, 'iPhone SE (2022)', 'iphone-se-2022', 'Compact, abordable, puissant', 'L''iPhone SE combine le format compact avec Touch ID et la puissance de la puce A15 Bionic, a prix accessible.', 320000, 350000, '64 Go', 'Rouge', 15, 'assets/images/products/iphone-se-2022-main.jpg', 0);
 
--- Produits Samsung
 INSERT INTO products (brand_id, name, slug, short_description, description, price, old_price, storage, color, stock, image_main, is_featured) VALUES
 (2, 'Samsung Galaxy S24 Ultra', 'galaxy-s24-ultra', 'Le summum Samsung avec S Pen et zoom 100x', 'Le Galaxy S24 Ultra combine un chassis en titane, un ecran Dynamic AMOLED 2X et des fonctionnalites Galaxy AI. S Pen integre et zoom optique impressionnant.', 780000, NULL, '256 Go', 'Noir Titane', 10, 'assets/images/products/galaxy-s24-ultra-main.jpg', 1),
 (2, 'Samsung Galaxy S23', 'galaxy-s23', 'Performances phares dans un format compact', 'Le Galaxy S23 embarque le processeur Snapdragon 8 Gen 2 et un appareil photo triple capteur pour des clichs eclatants.', 520000, 560000, '128 Go', 'Vert', 16, 'assets/images/products/galaxy-s23-main.jpg', 0),
 (2, 'Samsung Galaxy A54', 'galaxy-a54', 'Le meilleur rapport qualite-prix Samsung', 'Le Galaxy A54 offre un ecran Super AMOLED 120Hz, une certification IP67 et un appareil photo 50 MP a prix tres accessible.', 280000, 320000, '128 Go', 'Violet', 30, 'assets/images/products/galaxy-a54-main.jpg', 1),
 (2, 'Samsung Galaxy Z Flip5', 'galaxy-z-flip5', 'Le pliant compact et tendance', 'Le Galaxy Z Flip5 se plie en deux grace a son grand ecran de couverture Flex Window et son design premium.', 690000, NULL, '256 Go', 'Lavande', 8, 'assets/images/products/galaxy-z-flip5-main.jpg', 0);
 
--- Produits Google
 INSERT INTO products (brand_id, name, slug, short_description, description, price, old_price, storage, color, stock, image_main, is_featured) VALUES
 (3, 'Google Pixel 8 Pro', 'pixel-8-pro', 'L''intelligence artificielle Google au service de la photo', 'Le Pixel 8 Pro embarque la puce Google Tensor G3 et un systeme photo professionnel avec Magic Editor pour des retouches bluffantes.', 600000, NULL, '128 Go', 'Obsidienne', 9, 'assets/images/products/pixel-8-pro-main.jpg', 1),
 (3, 'Google Pixel 8', 'pixel-8', 'Photo intelligente et Android pur', 'Le Pixel 8 propose une experience Android pure, un appareil photo excellent en basse lumiere et 7 ans de mises a jour.', 480000, 520000, '128 Go', 'Menthe', 14, 'assets/images/products/pixel-8-main.jpg', 0),
 (3, 'Google Pixel 7a', 'pixel-7a', 'Le meilleur Pixel abordable', 'Le Pixel 7a offre un appareil photo 64 MP, la recharge sans fil et la fluidite d''Android au meilleur prix de la gamme Pixel.', 300000, 340000, '128 Go', 'Corail', 22, 'assets/images/products/pixel-7a-main.jpg', 1);
 
--- Galerie d'images secondaires (vue dos / vue alternative) pour chaque produit
 INSERT INTO product_images (product_id, image_path, sort_order)
 SELECT id, CONCAT('assets/images/products/', slug, '-back.jpg'), 1 FROM products;
 INSERT INTO product_images (product_id, image_path, sort_order)

@@ -1,8 +1,4 @@
 <?php
-/**
- * Connexion a la base de donnees MySQL (PDO)
- * Modifie ces constantes selon ta configuration locale (XAMPP/WAMP) ou ton hebergeur.
- */
 
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'marado_store');
@@ -10,7 +6,6 @@ define('DB_USER', 'root');
 define('DB_PASS', '');
 define('DB_CHARSET', 'utf8mb4');
 
-// Nom de la boutique et infos generales (utilises dans tout le site)
 define('SITE_NAME', 'Marado Store');
 define('SITE_TAGLINE', 'Votre boutique de smartphones premium');
 define('SITE_PHONE', '+229 01 00 00 00 00');

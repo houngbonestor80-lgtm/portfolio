@@ -1,7 +1,4 @@
 <?php
-/**
- * Authentification admin. A inclure apres includes/init.php.
- */
 
 function isAdminLoggedIn(): bool
 {

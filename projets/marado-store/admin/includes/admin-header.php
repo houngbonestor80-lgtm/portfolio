@@ -1,7 +1,5 @@
 <?php
-/**
- * En-tete du panneau admin. Attend $pageTitle et que auth.php ait ete inclus + requireAdmin() appele.
- */
+
 $pageTitle = $pageTitle ?? 'Administration';
 $currentScript = basename($_SERVER['SCRIPT_NAME']);
 ?>

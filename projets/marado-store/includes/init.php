@@ -1,8 +1,4 @@
 <?php
-/**
- * Point d'entree commun : session, config, fonctions, panier.
- * A inclure en toute premiere ligne de chaque page publique.
- */
 
 if (session_status() === PHP_SESSION_NONE) {
     session_start();

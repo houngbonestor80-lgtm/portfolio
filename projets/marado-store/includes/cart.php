@@ -1,8 +1,4 @@
 <?php
-/**
- * Gestion du panier via la session PHP.
- * Structure : $_SESSION['cart'] = [ product_id => quantity, ... ]
- */
 
 function cartInit(): void
 {
@@ -39,10 +35,6 @@ function cartClear(): void
     $_SESSION['cart'] = [];
 }
 
-/**
- * Retourne les lignes du panier avec les informations produit a jour depuis la BDD.
- * Enleve automatiquement les produits qui n'existent plus ou sont hors stock.
- */
 function cartItems(): array
 {
     cartInit();

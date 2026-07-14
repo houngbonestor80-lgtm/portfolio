@@ -1,7 +1,4 @@
 <?php
-/**
- * Fonctions utilitaires partagees par tout le site.
- */
 
 function e(?string $value): string
 {
@@ -47,10 +44,6 @@ function csrfCheck(): bool
     return isset($_POST['csrf_token'], $_SESSION['csrf_token'])
         && hash_equals($_SESSION['csrf_token'], $_POST['csrf_token']);
 }
-
-/* ---------------------------------------------------------
-   Requetes produits / marques
---------------------------------------------------------- */
 
 function getAllBrands(): array
 {

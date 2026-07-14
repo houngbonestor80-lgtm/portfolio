@@ -50,9 +50,6 @@ img {
     max-width: 100%;
 }
 
-/* =============================================
-   NAVBAR
-   ============================================= */
 .navbar {
     padding: 16px 0;
     transition: var(--transition);
@@ -106,9 +103,6 @@ img {
     color: var(--white) !important;
 }
 
-/* =============================================
-   HERO SECTIONS
-   ============================================= */
 .hero-section {
     height: 90vh;
     min-height: 500px;
@@ -169,9 +163,6 @@ img {
     color: var(--white);
 }
 
-/* =============================================
-   SECTION TITLES
-   ============================================= */
 .section-title {
     font-size: 2.2rem;
     font-weight: 700;
@@ -199,9 +190,6 @@ img {
     border-radius: 2px;
 }
 
-/* =============================================
-   DESTINATION CARDS
-   ============================================= */
 .dest-card {
     border: none;
     border-radius: var(--radius);
@@ -251,9 +239,6 @@ img {
     background: var(--brown);
 }
 
-/* =============================================
-   FEATURE CARDS (Pourquoi visiter)
-   ============================================= */
 .features-section {
     background: linear-gradient(135deg, var(--green-dark), var(--green-main));
     padding: 80px 0;
@@ -295,9 +280,6 @@ img {
     font-size: 0.95rem;
 }
 
-/* =============================================
-   CONTENT SECTIONS (Destinations, Parcs, Culture)
-   ============================================= */
 .content-section {
     padding: 60px 0;
     border-bottom: 1px solid #eee;
@@ -333,9 +315,6 @@ img {
     box-shadow: var(--shadow-hover);
 }
 
-/* =============================================
-   PARK SECTIONS
-   ============================================= */
 .park-card {
     background: var(--white);
     padding: 40px;
@@ -368,9 +347,6 @@ img {
     border-radius: 12px;
 }
 
-/* =============================================
-   CULTURE CARDS
-   ============================================= */
 .culture-card {
     border: none;
     border-radius: var(--radius);
@@ -400,9 +376,6 @@ img {
     font-weight: 700;
 }
 
-/* =============================================
-   GALLERY
-   ============================================= */
 .gallery-filter {
     display: flex;
     justify-content: center;
@@ -467,9 +440,6 @@ img {
     background: rgba(0, 0, 0, 0.2);
 }
 
-/* =============================================
-   CONTACT FORM
-   ============================================= */
 .contact-form {
     background: var(--white);
     border-radius: var(--radius);
@@ -513,9 +483,6 @@ img {
     color: var(--white);
 }
 
-/* =============================================
-   FOOTER
-   ============================================= */
 .footer {
     background: linear-gradient(180deg, #1a1a1a, #0d0d0d);
     padding: 60px 0 30px;
@@ -573,9 +540,6 @@ img {
     color: rgba(255, 255, 255, 0.4);
 }
 
-/* =============================================
-   WHATSAPP FLOATING BUTTON
-   ============================================= */
 .whatsapp-float {
     position: fixed;
     bottom: 30px;
@@ -600,9 +564,6 @@ img {
     color: var(--white);
 }
 
-/* =============================================
-   PROMO MODAL
-   ============================================= */
 .promo-modal .modal-content {
     border: none;
     border-radius: var(--radius);
@@ -627,9 +588,6 @@ img {
     margin-bottom: 24px;
 }
 
-/* =============================================
-   BACK TO TOP
-   ============================================= */
 .back-to-top {
     position: fixed;
     bottom: 100px;
@@ -658,9 +616,6 @@ img {
     transform: translateY(-4px);
 }
 
-/* =============================================
-   RESPONSIVE
-   ============================================= */
 @media (max-width: 768px) {
     .hero-section {
         height: 70vh;
@@ -707,9 +662,6 @@ img {
     }
 }
 
-/* =============================================
-   ANIMATIONS
-   ============================================= */
 [data-aos] {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
 }

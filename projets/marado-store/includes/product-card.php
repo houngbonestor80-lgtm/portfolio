@@ -1,8 +1,5 @@
 <?php
-/**
- * Partial : carte produit (grille boutique / accueil / produits lies).
- * Attend une variable $p (ligne produit avec brand_name / brand_slug).
- */
+
 $discount = 0;
 if (!empty($p['old_price']) && $p['old_price'] > $p['price']) {
     $discount = round((($p['old_price'] - $p['price']) / $p['old_price']) * 100);

@@ -1,9 +1,4 @@
 <?php
-/**
- * En-tete commun a toutes les pages publiques.
- * Attend que includes/init.php ait deja ete inclus par la page appelante.
- * Variables optionnelles : $pageTitle, $bodyClass
- */
 
 $pageTitle = $pageTitle ?? SITE_NAME;
 $brands = getAllBrands();

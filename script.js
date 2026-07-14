@@ -1,6 +1,3 @@
-/* =============================================
-   PARTICULES ANIMÉES
-   ============================================= */
 function createParticles() {
     const container = document.getElementById('particles');
     const count = 50;
@@ -16,9 +13,6 @@ function createParticles() {
     }
 }
 
-/* =============================================
-   NAVIGATION
-   ============================================= */
 const navbar = document.getElementById('navbar');
 const navToggle = document.getElementById('nav-toggle');
 const navMenu = document.getElementById('nav-menu');
@@ -63,9 +57,6 @@ function highlightNav() {
 
 window.addEventListener('scroll', highlightNav);
 
-/* =============================================
-   EFFET MACHINE À ÉCRIRE
-   ============================================= */
 const titles = [
     'Développeur Web',
     'Développeur Mobile',
@@ -104,9 +95,6 @@ function typeEffect() {
     setTimeout(typeEffect, speed);
 }
 
-/* =============================================
-   ANIMATION DES COMPTEURS
-   ============================================= */
 function animateCounters() {
     const counters = document.querySelectorAll('.stat-number');
 
@@ -130,9 +118,6 @@ function animateCounters() {
     });
 }
 
-/* =============================================
-   BARRES DE COMPÉTENCES
-   ============================================= */
 function animateSkills() {
     const skillBars = document.querySelectorAll('.skill-progress');
 
@@ -142,9 +127,6 @@ function animateSkills() {
     });
 }
 
-/* =============================================
-   FILTRE PROJETS
-   ============================================= */
 const filterBtns = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
 
@@ -171,9 +153,6 @@ filterBtns.forEach(btn => {
     });
 });
 
-/* =============================================
-   FORMULAIRE DE CONTACT
-   ============================================= */
 const contactForm = document.getElementById('contact-form');
 
 contactForm.addEventListener('submit', (e) => {
@@ -194,9 +173,6 @@ contactForm.addEventListener('submit', (e) => {
     contactForm.reset();
 });
 
-/* =============================================
-   SCROLL REVEAL
-   ============================================= */
 function setupReveal() {
     const elements = document.querySelectorAll(
         '.about-grid, .skill-category, .project-card, .service-card, .contact-grid'
@@ -226,9 +202,6 @@ function setupReveal() {
     elements.forEach(el => observer.observe(el));
 }
 
-/* =============================================
-   INITIALISATION
-   ============================================= */
 document.addEventListener('DOMContentLoaded', () => {
     createParticles();
     typeEffect();
