@@ -1,11 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Navbar scroll
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
         navbar.classList.toggle('scrolled', window.scrollY > 50);
     });
 
-    // Mobile menu
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
 
@@ -21,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Active nav link on scroll
     const sections = document.querySelectorAll('section[id]');
     window.addEventListener('scroll', () => {
         const scrollY = window.scrollY + 100;
@@ -36,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Hero particles
     const particlesContainer = document.getElementById('hero-particles');
     if (particlesContainer) {
         for (let i = 0; i < 20; i++) {
@@ -52,7 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Scroll animations
     const fadeElements = document.querySelectorAll('.service-card, .testimonial-card, .contact-card, .gallery-item, .about-content, .about-image, .banner-item, .contact-form-wrapper');
     fadeElements.forEach(el => el.classList.add('fade-in'));
 
@@ -67,7 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     fadeElements.forEach(el => observer.observe(el));
 
-    // Contact form -> WhatsApp
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
@@ -83,7 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', (e) => {
             const target = document.querySelector(anchor.getAttribute('href'));
