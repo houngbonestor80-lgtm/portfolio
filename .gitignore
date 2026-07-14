@@ -2,3 +2,4 @@ node_modules/
 .DS_Store
 Thumbs.db
 .vscode/
+projets/marado-store/config/database.local.php

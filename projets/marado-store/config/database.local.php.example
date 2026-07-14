@@ -1,0 +1,6 @@
+<?php
+
+define('DB_HOST', 'sqlXXX.infinityfree.com');
+define('DB_NAME', 'epiz_XXXXXXX_marado_store');
+define('DB_USER', 'epiz_XXXXXXX');
+define('DB_PASS', 'remplace-par-ton-mot-de-passe');

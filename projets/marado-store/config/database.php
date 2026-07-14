@@ -1,10 +1,14 @@
 <?php
 
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'marado_store');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_CHARSET', 'utf8mb4');
+if (file_exists(__DIR__ . '/database.local.php')) {
+    require __DIR__ . '/database.local.php';
+}
+
+defined('DB_HOST') || define('DB_HOST', 'localhost');
+defined('DB_NAME') || define('DB_NAME', 'marado_store');
+defined('DB_USER') || define('DB_USER', 'root');
+defined('DB_PASS') || define('DB_PASS', '');
+defined('DB_CHARSET') || define('DB_CHARSET', 'utf8mb4');
 
 define('SITE_NAME', 'Marado Store');
 define('SITE_TAGLINE', 'Votre boutique de smartphones premium');
