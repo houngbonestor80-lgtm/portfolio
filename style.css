@@ -720,6 +720,13 @@ img {
     opacity: 0.5;
 }
 
+.project-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 .project-overlay {
     position: absolute;
     top: 0;

@@ -1,0 +1,12 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 60'>
+    <defs>
+        <linearGradient id='logoGrad' x1='0%' y1='0%' x2='100%' y2='100%'>
+            <stop offset='0%' stop-color='#2563eb'/>
+            <stop offset='100%' stop-color='#f59e0b'/>
+        </linearGradient>
+    </defs>
+    <rect x='2' y='10' width='40' height='40' rx='12' fill='url(#logoGrad)'/>
+    <rect x='14' y='18' width='16' height='24' rx='4' fill='#ffffff' opacity='0.95'/>
+    <circle cx='22' cy='36' r='2' fill='#111827'/>
+    <text x='54' y='38' font-family='Arial, sans-serif' font-size='26' font-weight='800' fill='#0f172a'>Marado<tspan fill='#2563eb'>Store</tspan></text>
+</svg>

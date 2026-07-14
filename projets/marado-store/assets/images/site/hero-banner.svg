@@ -1,0 +1,41 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 700'>
+    <defs>
+        <radialGradient id='heroBg' cx='60%' cy='35%' r='75%'>
+            <stop offset='0%' stop-color='#1e293b'/>
+            <stop offset='100%' stop-color='#0b1120'/>
+        </radialGradient>
+    </defs>
+    <rect width='900' height='700' fill='url(#heroBg)'/>
+    <circle cx='680' cy='150' r='220' fill='#2563eb' opacity='0.18'/>
+    <circle cx='150' cy='560' r='180' fill='#f59e0b' opacity='0.12'/>
+    <g transform='translate(430 60) rotate(-8)'><defs>
+        <linearGradient id='gi5f8e72' x1='0%' y1='0%' x2='100%' y2='100%'>
+            <stop offset='0%' stop-color='#b4b3ae'/>
+            <stop offset='55%' stop-color='#9c9a94'/>
+            <stop offset='100%' stop-color='#656460'/>
+        </linearGradient>
+        <linearGradient id='si75ef20' x1='0%' y1='0%' x2='100%' y2='100%'>
+            <stop offset='0%' stop-color='#070707'/>
+            <stop offset='100%' stop-color='#0d0d0d'/>
+        </linearGradient>
+    </defs><rect x='288' y='90' width='224' height='470' rx='46' fill='url(#gi5f8e72)' stroke='#4e4d4a' stroke-width='2'/><rect x='300' y='106' width='200' height='438' rx='30' fill='url(#si75ef20)'/><circle cx='400' cy='325' r='46' fill='#ffffff' opacity='0.08'/><text x='400' y='342' font-family='Arial, sans-serif' font-size='42' font-weight='700' fill='#ffffff' opacity='0.55' text-anchor='middle'>A</text><rect x='368' y='118' width='64' height='24' rx='12' fill='#05050a'/></g><g transform='translate(230 140) scale(0.85) rotate(6)'><defs>
+        <linearGradient id='gie82ba3' x1='0%' y1='0%' x2='100%' y2='100%'>
+            <stop offset='0%' stop-color='#606062'/>
+            <stop offset='55%' stop-color='#2b2b2e'/>
+            <stop offset='100%' stop-color='#1b1b1d'/>
+        </linearGradient>
+        <linearGradient id='si2a1309' x1='0%' y1='0%' x2='100%' y2='100%'>
+            <stop offset='0%' stop-color='#050a28'/>
+            <stop offset='100%' stop-color='#091248'/>
+        </linearGradient>
+    </defs><rect x='288' y='90' width='224' height='470' rx='46' fill='url(#gie82ba3)' stroke='#151517' stroke-width='2'/><rect x='300' y='106' width='200' height='438' rx='30' fill='url(#si2a1309)'/><circle cx='400' cy='325' r='46' fill='#ffffff' opacity='0.08'/><text x='400' y='342' font-family='Arial, sans-serif' font-size='42' font-weight='700' fill='#ffffff' opacity='0.55' text-anchor='middle'>S</text><circle cx='400' cy='122' r='7' fill='#05050a'/></g><g transform='translate(560 170) scale(0.8) rotate(10)'><defs>
+        <linearGradient id='gi6624d7' x1='0%' y1='0%' x2='100%' y2='100%'>
+            <stop offset='0%' stop-color='#505154'/>
+            <stop offset='55%' stop-color='#16171b'/>
+            <stop offset='100%' stop-color='#0e0e11'/>
+        </linearGradient>
+        <linearGradient id='si795a95' x1='0%' y1='0%' x2='100%' y2='100%'>
+            <stop offset='0%' stop-color='#10213d'/>
+            <stop offset='100%' stop-color='#1d3b6d'/>
+        </linearGradient>
+    </defs><rect x='288' y='90' width='224' height='470' rx='46' fill='url(#gi6624d7)' stroke='#0b0b0d' stroke-width='2'/><rect x='300' y='106' width='200' height='438' rx='30' fill='url(#si795a95)'/><circle cx='400' cy='325' r='46' fill='#ffffff' opacity='0.08'/><text x='400' y='342' font-family='Arial, sans-serif' font-size='42' font-weight='700' fill='#ffffff' opacity='0.55' text-anchor='middle'>G</text><circle cx='400' cy='122' r='7' fill='#05050a'/></g></svg>
