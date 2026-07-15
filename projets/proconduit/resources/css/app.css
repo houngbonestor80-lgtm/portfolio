@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-sand-50 text-stone-700 font-sans antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display text-ink-900;
+  }
+}
+
+@layer components {
+  .container-narrow {
+    @apply mx-auto w-full max-w-7xl px-6 lg:px-8;
+  }
+
+  .eyebrow {
+    @apply inline-block text-xs font-semibold uppercase tracking-[0.2em] text-green-700;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-green-gradient px-7 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-soft transition duration-300 hover:brightness-110 hover:-translate-y-0.5;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-green-600 px-7 py-3 text-sm font-semibold uppercase tracking-wide text-green-700 transition duration-300 hover:bg-green-50;
+  }
+
+  .card {
+    @apply rounded-2xl border border-stone-200 bg-white shadow-soft;
+  }
+
+  .section-title {
+    @apply font-display text-3xl sm:text-4xl text-ink-900;
+  }
+
+  .divider-gold {
+    @apply h-1 w-16 rounded-full bg-gold-gradient;
+  }
+
+  .pattern-motif {
+    background-image: repeating-linear-gradient(45deg, rgba(252, 209, 22, 0.08) 0, rgba(252, 209, 22, 0.08) 2px, transparent 2px, transparent 18px),
+      repeating-linear-gradient(-45deg, rgba(15, 122, 76, 0.06) 0, rgba(15, 122, 76, 0.06) 2px, transparent 2px, transparent 18px);
+  }
+
+  .photo-hero {
+    @apply relative overflow-hidden bg-ink-900 bg-cover bg-center;
+  }
+
+  .photo-hero::after {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/70 to-ink-950/30;
+  }
+
+  .photo-hero > * {
+    @apply relative z-10;
+  }
+}
