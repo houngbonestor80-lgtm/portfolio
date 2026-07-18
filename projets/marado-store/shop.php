@@ -74,7 +74,7 @@ require_once __DIR__ . '/includes/header.php';
 
                 <?php if (empty($products)): ?>
                     <div class="empty-state">
-                        <div class="icon">&#128269;</div>
+                        <div class="icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
                         <h3>Aucun produit trouve</h3>
                         <p>Essaie de modifier tes filtres ou ta recherche.</p>
                         <a href="/shop.php" class="btn btn-primary">Voir tous les produits</a>

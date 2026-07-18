@@ -25,22 +25,22 @@ require_once __DIR__ . '/includes/header.php';
             </div>
             <div class="features-grid" style="grid-template-columns:repeat(2,1fr);">
                 <div class="feature-card" style="background:var(--color-bg-alt);border-radius:var(--radius-lg);">
-                    <div class="icon">&#128737;</div>
+                    <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
                     <h4>Garantie 12 mois</h4>
                     <p>Sur tous nos smartphones neufs.</p>
                 </div>
                 <div class="feature-card" style="background:var(--color-bg-alt);border-radius:var(--radius-lg);">
-                    <div class="icon">&#128666;</div>
+                    <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
                     <h4>Livraison rapide</h4>
                     <p>24h a Cotonou, 48-72h ailleurs.</p>
                 </div>
                 <div class="feature-card" style="background:var(--color-bg-alt);border-radius:var(--radius-lg);">
-                    <div class="icon">&#128176;</div>
+                    <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="3"/><line x1="6" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="18" y2="12"/></svg></div>
                     <h4>Paiement flexible</h4>
                     <p>A la livraison ou Mobile Money.</p>
                 </div>
                 <div class="feature-card" style="background:var(--color-bg-alt);border-radius:var(--radius-lg);">
-                    <div class="icon">&#9989;</div>
+                    <div class="icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
                     <h4>Produits verifies</h4>
                     <p>Selection rigoureuse des modeles.</p>
                 </div>
