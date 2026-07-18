@@ -12,8 +12,8 @@ defined('DB_CHARSET') || define('DB_CHARSET', 'utf8mb4');
 
 define('SITE_NAME', 'Marado Store');
 define('SITE_TAGLINE', 'Votre boutique de smartphones premium');
-define('SITE_PHONE', '+229 01 00 00 00 00');
-define('SITE_WHATSAPP', '22900000000');
+define('SITE_PHONE', '01 59 97 06 90');
+define('SITE_WHATSAPP', '229159970690');
 define('SITE_EMAIL', 'contact@maradostore.com');
 define('SITE_ADDRESS', 'Cotonou, Benin');
 define('CURRENCY', 'FCFA');

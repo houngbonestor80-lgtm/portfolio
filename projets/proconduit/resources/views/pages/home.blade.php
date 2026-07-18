@@ -5,7 +5,6 @@
 
 @section('content')
 
-    {{-- Hero --}}
     <section
         class="photo-hero py-28 sm:py-36"
         style="background-image: url('https://images.unsplash.com/photo-1646459273661-66884c54f2f1?fm=jpg&q=70&w=1920&auto=format&fit=crop');"
@@ -50,7 +49,6 @@
         </div>
     </section>
 
-    {{-- Pourquoi nous choisir --}}
     <section class="py-24">
         <div class="container-narrow">
             <div class="mx-auto max-w-2xl text-center">
@@ -93,7 +91,6 @@
         </div>
     </section>
 
-    {{-- Services preview --}}
     <section class="bg-sand-100 py-24">
         <div class="container-narrow">
             <div class="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
@@ -119,7 +116,6 @@
         </div>
     </section>
 
-    {{-- Étapes --}}
     <section class="py-24">
         <div class="container-narrow">
             <div class="mx-auto max-w-2xl text-center">
@@ -144,7 +140,6 @@
         </div>
     </section>
 
-    {{-- Témoignages --}}
     <section class="bg-sand-100 py-24">
         <div class="container-narrow">
             <div class="mx-auto max-w-2xl text-center">
@@ -172,7 +167,6 @@
         </div>
     </section>
 
-    {{-- CTA --}}
     <section class="py-24">
         <div class="container-narrow">
             <div class="card flex flex-col items-center gap-6 px-8 py-16 text-center">
