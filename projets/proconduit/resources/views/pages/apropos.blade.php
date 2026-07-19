@@ -7,7 +7,7 @@
 
     <section
         class="photo-hero py-20 sm:py-28"
-        style="background-image: url('https://images.unsplash.com/photo-1734867790637-1716c5b9ab42?fm=jpg&q=70&w=1920&auto=format&fit=crop');"
+        style="background-image: url('https://images.unsplash.com/photo-1709600677177-dd125e80dd6e?fm=jpg&q=70&w=1920&auto=format&fit=crop');"
     >
         <div class="container-narrow text-center">
             <span class="eyebrow !text-gold-300">À propos de nous</span>
@@ -35,8 +35,8 @@
 
             <div class="overflow-hidden rounded-2xl border border-stone-200 shadow-soft">
                 <img
-                    src="https://images.unsplash.com/photo-1586901027629-40a5d5238b7c?fm=jpg&q=70&w=1200&auto=format&fit=crop"
-                    alt="Le village lacustre de Ganvié, sur le lac Nokoué au Bénin"
+                    src="https://images.unsplash.com/photo-1688366771561-2776dac6c09b?fm=jpg&q=70&w=1200&auto=format&fit=crop"
+                    alt="Une élève au volant pendant une leçon de conduite"
                     class="h-full w-full object-cover"
                     loading="lazy"
                 >

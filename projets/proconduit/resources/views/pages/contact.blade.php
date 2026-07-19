@@ -7,7 +7,7 @@
 
     <section
         class="photo-hero py-20 sm:py-28"
-        style="background-image: url('https://images.unsplash.com/photo-1657452184899-4e1be7bb4f51?fm=jpg&q=70&w=1920&auto=format&fit=crop');"
+        style="background-image: url('https://images.unsplash.com/photo-1709600677177-dd125e80dd6e?fm=jpg&q=70&w=1920&auto=format&fit=crop');"
     >
         <div class="container-narrow text-center">
             <span class="eyebrow !text-gold-300">Contact</span>

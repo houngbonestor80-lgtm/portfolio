@@ -7,7 +7,7 @@
 
     <section
         class="photo-hero py-20 sm:py-28"
-        style="background-image: url('https://images.unsplash.com/photo-1445262514300-c58bfa7d9557?fm=jpg&q=70&w=1920&auto=format&fit=crop');"
+        style="background-image: url('https://images.unsplash.com/photo-1688366771561-2776dac6c09b?fm=jpg&q=70&w=1920&auto=format&fit=crop');"
     >
         <div class="container-narrow text-center">
             <span class="eyebrow !text-gold-300">Nos formations</span>

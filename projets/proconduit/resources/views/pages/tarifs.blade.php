@@ -7,7 +7,7 @@
 
     <section
         class="photo-hero py-20 sm:py-28"
-        style="background-image: url('https://images.unsplash.com/photo-1600241005059-71de13374958?fm=jpg&q=70&w=1920&auto=format&fit=crop');"
+        style="background-image: url('https://images.unsplash.com/photo-1671128972815-17ed4f000580?fm=jpg&q=70&w=1920&auto=format&fit=crop');"
     >
         <div class="container-narrow text-center">
             <span class="eyebrow !text-gold-300">Tarifs</span>
