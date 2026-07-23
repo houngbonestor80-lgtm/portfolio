@@ -7,7 +7,7 @@
 
     <section
         class="photo-hero py-20 sm:py-28"
-        style="background-image: url('https://images.unsplash.com/photo-1709600677177-dd125e80dd6e?fm=jpg&q=70&w=1920&auto=format&fit=crop');"
+        style="background-image: url('https://images.unsplash.com/photo-1671128972815-17ed4f000580?fm=jpg&q=70&w=1920&auto=format&fit=crop');"
     >
         <div class="container-narrow text-center">
             <span class="eyebrow !text-gold-300">À propos de nous</span>
@@ -35,7 +35,7 @@
 
             <div class="overflow-hidden rounded-2xl border border-stone-200 shadow-soft">
                 <img
-                    src="https://images.unsplash.com/photo-1688366771561-2776dac6c09b?fm=jpg&q=70&w=1200&auto=format&fit=crop"
+                    src="https://images.unsplash.com/photo-1591883307500-9072e99aff62?fm=jpg&q=70&w=1200&auto=format&fit=crop"
                     alt="Une élève au volant pendant une leçon de conduite"
                     class="h-full w-full object-cover"
                     loading="lazy"
