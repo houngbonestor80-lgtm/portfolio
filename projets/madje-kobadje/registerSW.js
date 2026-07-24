@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/portfolio/projets/madje-kobadje/sw.js', { scope: '/portfolio/projets/madje-kobadje/' })})}
